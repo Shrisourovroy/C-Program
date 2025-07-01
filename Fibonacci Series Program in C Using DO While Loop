@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n, fibo;
+    
+    printf("Enter the fibo: ");
+    scanf("%d",&n);
+    int first = 0;
+    int sec = 1;
+    printf("0 1");
+    int i=3;
+    while(i<=n)
+    {
+        fibo = first + sec;
+        printf(" %d", fibo);
+        first = sec;
+        sec = fibo;
+        i++;
+    }
+    return 0;
+}
