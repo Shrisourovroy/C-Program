@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    float n,arr[20], sum = 0;
+    printf("Enter the number of subject: ");
+    scanf("%f",&n);
+
+    int m = n*100;
+
+    for(int i = 0; i<n; i++)
+    {
+        scanf("%f",&arr[i]);
+    }
+    for(int i = 0; i<n; i++)
+    {
+        sum = sum + arr[i];
+    }
+    float percent = (sum*100)/m;
+
+    printf("Percentage of subject: %0.2f",percent);
+    return 0;
+
+}
